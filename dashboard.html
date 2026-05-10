@@ -1,163 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Digital Marketing Agency</title>
 
-   <!-- CSS -->
-  padding: 10px;
-  border: 1px solid var(--border-primary-color);
-}
-
-table tbody tr:nth-child(odd) {
-  background: #f1f5f9;
-}
-
-table tbody tr:nth-child(even) {
-  background: #e2e8f0;
-}
-
-table tbody tr:hover {
-  background: #cbd5f5;
-}
-
-/* =========================================================
-   FOOTER
-========================================================= */
-footer {
-  background: var(--bg-card);
-  padding: 20px;
-  margin-top: 30px;
-  border-top: 1px solid var(--border-primary-color);
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-  }
-
-  .card-container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-    </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="cssFile/globalStyles.css">
+    
 </head>
-<body>
 
-<!-- ================= NAVBAR ================= -->
-<nav>
-    <a href="../index.html"><h2>Digital Marketing Agency</h2></a>
-  <!-- ADD BUTTON HERE -->
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+<body> 
 
-    <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="login.html">Logout</a></li>
-    </ul>
-</nav>
+    <!-- ================= NAVBAR ================= -->
+    <nav>
+        <a href="index.html">
+            <h2>Digital Marketing Agency</h2>
+        </a>
 
-<!-- ================= PAGE CONTENT ================= -->
-<div class="page">
+        <!-- ADD BUTTON HERE -->
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
-    <h1>Dashboard</h1>
-    <p>Overview of your marketing campaigns and performance.</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/services.html">Services</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+             <li><a href="pages/dashboard.html">Dashboard</a></li>
+            <li><a href="pages/login.html">Login</a></li>
+            <li><a href="pages/signup.html">Signup</a></li>
+        </ul>
+    </nav>
 
-    <!-- ================= TABLE ================= -->
-    <div class="table-container">
+    <!-- ================= HERO SECTION ================= -->
+  <div class="page" style="text-align:center; padding:60px 20px;">
 
-        <!-- inline CSS for width control (as required) -->
-        <table style="min-width: 600px; max-width: 1000px;">
+    <h1>We Build Digital Growth Engines 🚀</h1>
 
-            <thead>
-                <tr>
-                    <th>Campaign</th>
-                    <th>Platform</th>
-                    <th>Status</th>
-                    <th>Budget</th>
-                    <th>Performance</th>
-                </tr>
-            </thead>
+    <p style="max-width:600px; margin:auto;">
+        A full-service digital marketing agency helping startups and businesses
+        scale with SEO, paid ads, and powerful branding strategies.
+    </p>
 
-            <tbody>
-                <tr>
-                    <td>SEO Growth</td>
-                    <td>Google</td>
-                    <td>Active</td>
-                    <td>$500</td>
-                    <td>High</td>
-                </tr>
-
-                <tr>
-                    <td>Social Boost</td>
-                    <td>Instagram</td>
-                    <td>Active</td>
-                    <td>$300</td>
-                    <td>Medium</td>
-                </tr>
-
-                <tr>
-                    <td>Ad Campaign</td>
-                    <td>Facebook</td>
-                    <td>Paused</td>
-                    <td>$200</td>
-                    <td>Low</td>
-                </tr>
-
-                <tr>
-                    <td>Email Reach</td>
-                    <td>Email</td>
-                    <td>Active</td>
-                    <td>$150</td>
-                    <td>High</td>
-                </tr>
-
-                <tr>
-                    <td>Content Strategy</td>
-                    <td>Blog</td>
-                    <td>Completed</td>
-                    <td>$250</td>
-                    <td>Medium</td>
-                </tr>
-            </tbody>
-
-        </table>
-
+    <div style="margin-top:20px;">
+        <button>Get Started</button>
+        <a href="pages/services.html" class="link-button">View Services</a>
     </div>
 
 </div>
 
-<!-- ================= FOOTER ================= -->
-<footer>
-    <div class="footer-container">
+<div class="page">
 
-        <div>
-            <h3>Dashboard</h3>
-            <p>Track and manage your campaigns efficiently.</p>
+    <h2 style="text-align:center;">Why Choose Us</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Data-Driven Strategy</h3>
+            <p>We use analytics and insights to create high-performing campaigns.</p>
         </div>
 
-        <div>
-            <h3>Quick Links</h3>
-            <p><a href="../index.html">Home</a></p>
-            <p><a href="services.html">Services</a></p>
+        <div class="card">
+            <h3>Experienced Team</h3>
+            <p>Our experts have worked with brands across multiple industries.</p>
+        </div>
+
+        <div class="card">
+            <h3>ROI Focused</h3>
+            <p>We focus on delivering measurable business results.</p>
         </div>
 
     </div>
-</footer>
 
-<script src="../jsFile/jsFunctions.js"></script>
+</div>
+    <!-- ================= SERVICES (CARDS) ================= -->
+    <div class="card-container">
+
+        <div class="card">
+            <img src="https://finetouchmarketing.com/wp-content/uploads/2023/03/SEO-marketing-company.jpg" alt="SEO">
+            <h3>SEO Optimization</h3>
+            <p>Improve your website ranking on search engines.</p>
+            <a href="pages/services.html" class="link-button">Learn More</a>
+        </div>
+
+        <div class="card">
+            <img src="https://www.dreamgrow.com/wp-content/uploads/2025/09/social-media-marketing-statistics-for-2025.jpg" alt="Social Media">
+            <h3>Social Media Marketing</h3>
+            <p>Engage your audience across all platforms.</p>
+            <a href="pages/services.html" class="link-button">Learn More</a>
+        </div>
+
+        <div class="card">
+            <img src="https://www.clickslice.co.uk/wp-content/uploads/2023/06/Types-of-Paid-Advertising.jpg" alt="Ads">
+            <h3>Paid Advertising</h3>
+            <p>Boost your reach with targeted ad campaigns.</p>
+            <a href="pages/services.html" class="link-button">Learn More</a>
+        </div>
+
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="footer-container">
+
+            <div>
+                <h3>About Us</h3>
+                <p>We are a results-driven digital marketing agency.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="pages/services.html">Services</a></p>
+                <p><a href="pages/contact.html">Contact</a></p>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>Email: info@dma.com</p>
+                <p>Phone: +123456789</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="jsFile/jsFunctions.js"></script>
 
 </body>
+
 </html>
