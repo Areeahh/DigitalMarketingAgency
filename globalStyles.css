@@ -2,33 +2,25 @@
    DESIGN SYSTEM
 ========================================================= */
 :root {
-  --brand-primary-color: #2563eb;
-  --brand-secondary-color: #1e40af;
-  --brand-third-color: #38bdf8;
-  --brand-fourth-color: #0ea5e9;
+  --brand-primary-color: #0f172a;
+  --brand-secondary-color: #1e293b;
+  --brand-third-color: #3b82f6;
+  --brand-fourth-color: #6366f1;
   --brand-accent-color: #f59e0b;
 
-  --bg-main: #f8fafc;
+  --bg-main: #f9fafb;
   --bg-card: #ffffff;
 
-  --text-primary-color: #111827;
-  --text-secondary-color: #374151;
-  --text-muted-color: #6b7280;
-  --text-focus-color: #2563eb;
-  --text-highlighted-color: #f59e0b;
-
-  --border-primary-color: #e5e7eb;
-  --border-secondary-color: #d1d5db;
-  --border-muted-color: #9ca3af;
-  --border-focus-color: #2563eb;
-  --border-highlighted-color: #f59e0b;
+  --text-primary-color: #0f172a;
+  --text-secondary-color: #334155;
+  --text-muted-color: #64748b;
 
   --radius-sm: 6px;
-  --radius-md: 10px;
-
+  --radius-md: 12px;
   --transition: 0.3s ease;
+  --border-primary-color: #d1d5db;
+  --border-focus-color: #3b82f6;
 }
-
 /* =========================================================
    GLOBAL BASE
 ========================================================= */
@@ -195,7 +187,35 @@ table tbody tr:nth-child(even) {
 table tbody tr:hover {
   background: #cbd5f5;
 }
+.menu-toggle {
+  display: none;
+}
 
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    color: black;
+    font-size: 24px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 /* =========================================================
    FOOTER
 ========================================================= */
